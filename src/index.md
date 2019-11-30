@@ -7,4 +7,4 @@ meta:
 
 ## Index
 
-[about this page](/about)
+[about this page](about)
