@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
     - master
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@master
@@ -25,17 +25,14 @@ jobs:
           ${{ runner.os }}-node-
 
     - name: Install
-      run: npm install
+      run: yarn
 
-    # - name: Test
-    #   run: npm test
-
-    - name: Generate
-      run: npm run build
+    - name: Build docs
+      run: yarn src:build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.4.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./.vuepress/dist
+        PUBLISH_DIR: ./src/.vuepress/dist
