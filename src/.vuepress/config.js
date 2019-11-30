@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/test-docs-vuejs/',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -17,5 +18,11 @@ module.exports = {
       ['/', 'Home'],
       ['/about/', 'About']
     ]
-  }
+  },
+  locales: {
+    '/': {
+      lang: 'ja'
+    }
+  },
+
 }
