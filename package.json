@@ -1,10 +1,15 @@
 {
+  "name": "test-docs-vuejs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:Tiryoh/test-docs-vuejs.git",
+  "author": "Tiryoh <tiryoh@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "vuepress": "^1.2.0"
   },
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build",
-    "eject": "vuepress eject"
+    "src:dev": "vuepress dev src",
+    "src:build": "vuepress build src"
   }
 }

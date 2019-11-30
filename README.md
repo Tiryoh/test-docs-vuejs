@@ -1,10 +1,9 @@
----
-title: test-docs-vuejs
-meta:
-  - name: description
-    content: このリポジトリの説明
----
+# test-docs-vuejs
 
-## VuePressをGitHub Actionsでデプロイするサンプル
+VuePressをGitHub ActionsでGitHub Pagesにデプロイするサンプル
 
-GitHub Pagesに公開される
+## Requirements
+
+* Node.js 10.x
+* npm 6.x
+* Yarn > 1.12
