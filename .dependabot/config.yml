@@ -15,5 +15,5 @@ update_configs:
     default_assignees:
       - "Tiryoh"
     default_labels:
-      - "dependencies"
-      - "javascript"
+      - "Type: Dependencies"
+      - "Lang: JavaScript"
