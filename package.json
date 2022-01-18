@@ -6,7 +6,7 @@
   "author": "Tiryoh <tiryoh@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "1.7.1"
+    "vuepress": "1.9.7"
   },
   "scripts": {
     "src:dev": "vuepress dev src",
